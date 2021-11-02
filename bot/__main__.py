@@ -35,8 +35,8 @@ def stats(update, context):
             f'<b>Total Disk Space:</b> <code>{total}</code>\n' \
             f'<b>Used:</b> <code>{used}</code>' \
             f'<b>Free:</b> <code>{free}</code>\n\n' \
-            f'<b>Upload:</b> <code>{sent}</code>\n' \
-            f'<b>Download:</b> <code>{recv}</code>\n\n' \
+            f'<b>Sent:</b> <code>{sent}</code>\n' \
+            f'<b>Received:</b> <code>{recv}</code>\n\n' \
             f'<b>CPU:</b> <code>{cpuUsage}%</code>' \
             f'<b>RAM:</b> <code>{memory}%</code>' \
             f'<b>DISK:</b> <code>{disk}%</code>'
@@ -45,8 +45,8 @@ def stats(update, context):
 
 def start(update, context):
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("Repo", "https://github.com/iamLiquidX/MirLeechX")
-    buttons.buildbutton("Group", "https://t.me/mirrorLeechTelegramBot")
+    buttons.buildbutton("Repo", "https://github.com")
+    buttons.buildbutton("Group", "https://t.me")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
@@ -142,9 +142,9 @@ help_string_telegraph = f'''<br>
 <b>/{BotCommands.StatsCommand}</b>: Show Stats of the machine the bot is hosted on
 '''
 help = Telegraph(access_token=telegraph_token).create_page(
-        title='MirLeechX Help',
-        author_name='MirLeechX',
-        author_url='https://github.com/iamLiquidX/MirLeechX',
+        title='Peralez Help',
+        author_name='Peralez',
+        author_url='https://github.com',
         html_content=help_string_telegraph,
     )["path"]
 
