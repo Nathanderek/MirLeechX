@@ -245,7 +245,7 @@ sudo docker run -p 80:80 mirror-bot
 
 ### Using Docker-compose, you can edit and build your image in seconds:
 
-**NOTE**: If you want to use port other than 80, change it in [docker-compose.yml](https://github.com/anasty17/mirror-leech-telegram-bot/blob/master/docker-compose.yml)
+**NOTE**: If you want to use port other than 80, 
 
 ```
 sudo apt install docker-compose
@@ -281,12 +281,8 @@ sudo docker image prune -a
 - Tutorial video from Tortoolkit repo
 <p><a href="https://youtu.be/c8_TU1sPK08"> <img src="https://img.shields.io/badge/See%20Video-black?style=for-the-badge&logo=YouTube" width="160""/></a></p>
 
-## Deploying on Heroku
-- Deploying on Heroku with Github Workflow
-<p><a href="https://telegra.ph/Heroku-Deployment-10-04"> <img src="https://img.shields.io/badge/Deploy%20Guide-blueviolet?style=for-the-badge&logo=heroku" width="170""/></a></p>
 
-- Deploying on Heroku with heroku-cli and Goorm IDE
-<p><a href="https://telegra.ph/How-to-Deploy-a-Mirror-Bot-to-Heroku-with-CLI-05-06"> <img src="https://img.shields.io/badge/Deploy%20Guide-grey?style=for-the-badge&logo=telegraph" width="170""/></a></p>
+
 
 # Using Service Accounts for uploading to avoid user rate limit
 For Service Account to work, you must set `USE_SERVICE_ACCOUNTS` = "True" in config file or environment variables.
